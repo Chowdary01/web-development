@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WELCOME TO SPICE</title>
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+    body{
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+    .Menu_bar{
+        text-align: center;
+    }
+    .Menu_bar ul{
+        display: inline-flex;
+        list-style: none;
+    }
+    .Menu_bar ul li{
+        width: 120px;
+        margin: 15px;
+        padding: 15px;
+    }
+    .Menu_bar ul li a{
+        text-decoration: none;
+    }
+    .Active,.Menu_bar ul li:hover{
+        border-radius: 3px;
+        background-color: antiquewhite;
+    }
+    .Menu_bar .fa{
+        margin-right: 8px;
+    }
+    .Sub_home_1{
+        display: none;
+    }
+    .Menu_bar ul li:hover .Sub_home_1{
+        display: block;
+        position: absolute;
+        margin-top: 15px;
+        margin-left: 15 px;
+    }
+    .Menu_bar ul li:hover .Sub_home_1 ul{
+        display: block;
+        margin: 10px;
+    }
+    .Menu_bar ul li:hover .Sub_home_1 ul li{
+        width: 150px;
+        padding: 10px;
+        border-bottom: 1px;
+        background: transparent;
+        border-radius: 0;
+        text-align: left;
+    }   
+    .Menu_bar ul li:hover .Sub_home_1 ul li:last-child{
+        border-bottom: none;
+    }        
+    </style>
+</head>
+<body>
+    <div class="Menu_bar">
+        <h1 style="color: antiquewhite; background-color: black;">Space</h1>
+   <ul>
+       <li class="Active"><a href="#">HOME</a></li>
+       <li><a href="#">P&S</a></li>
+       <li><a href="#">SIGN UP</a>
+        <div class="Sub_home_1">
+            <ul>
+                <li><a href="#">ORGANIZATION</a></li>
+                <li><a href="#">FREE LANCE TEACHER</a></li>
+                <li><a href="#">STUDENT</a></li>
+        </div></li>
+       <li><a href="#">LOG IN</a>
+        <div class="Sub_home_1">
+            <ul>
+                <li><a href="#">ORGANIZATION LOGIN</a></li>
+                <li><a href="#">FREE LANCE TEACHER LOGIN</a></li>
+                <li><a href="#">STUDENT LOGIN</a></li>
+                <li><a href="#">PROGRAM LOGIN</a></li>
+                <li><a href="#">DEPARTMENT LOGIN</a></li>
+        </div></li>
+       <li><a href="#">CONTACT</a>
+        <div class="Sub_home_1">
+            <ul>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">SUPPORT</a></li>
+        </div></li></li>
+   </ul> 
+</div>
+<div id="Content">
+    <h1 style="color: blue;"><u>Vission</u></h1>
+    <h1 style="color: blue;"><u>Misson</u></h1>
+</div>
+</body>
+</html>
